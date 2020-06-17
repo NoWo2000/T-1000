@@ -3,17 +3,21 @@
 \usepackage[utf8]{inputenc}
 \usepackage{ngerman}
 \usepackage{blindtext}
+\usepackage[bottom]{footmisc}
+\usepackage{hyperref}
+\usepackage{graphicx}
 
 \title{Titel der T-1000}
 \author{Vorname Nachname}
 \begin{document}
+
 \date{\parbox{\linewidth}{\centering
 	matrikelNr. 12346654, FIRMA\endgraf
 	SNummer@student.dhbw-mannheim.de }}
 
 \maketitle
 
-%Abstract für des Papers
+%Abstract des Papers
 \section*{abstract}
 \blindtext %LÖSCHEN BEIM BEARBEITEN
 
@@ -22,32 +26,39 @@
 \newpage
 
 %Beginn des Dokuments nach dem Inhaltsverzeichnis
-\section{Große Überschrift}
+\section{Große Überschrift Nr. 1}
 \blindtext 
 
-\subsection{Unterüberschrift}
-\Blindtext
-
-\section{Überschrift}
+\subsection{Unter-überschrift}
 \blindtext
 
-\subsection{Unterüberschrift Nr. 1}
-\blindtext\bibliography{Quellen}
+\subsubsection{Unter-unter-Überschrift}
+\blindtext
 
-\subsection{Unterüberschrift Nr. 2}
-lkjabHEDLK jadflkh \cite{Abbildung1} aslkdfh \cite{Buchbeispiel} alksdfhj klasdfhklasdh fklas hjdfkash dfhasdklf haslkdfh aslkdfhakl sdhfkas hdfklashdflk hasldkfj hasldkfhadksjhf alksdjh flk shlkh lk hlk hjlkhlkjh lkh lkjh lkjh ljk lk 
+
+\section{Überschrift Nr. 2}
+auhdfklahdfklajhsdlkjfh alksd hfkljafsh glkadhf gklashfg klahskhask h kjhkj ghkj fghlj hgfvhbjiouz ifgjvhbu gvhbjk huizghvb jhkiuzg hjvbmn,jkl hhb nk hbno khnbmk jjkbnmk jkbn mko \cite{aristotle:physics} bhniadvbnjsdikgvfhsbmipon \footnote{TEST Fußnote} ezkhunsi fgvhwnpo fghvbaim hnwhbef oaw \footnote{Eine andere Fußnote} aw ds fg sd fg sdf gsd fg sdfg sdfg asfg as fg afg afg efg fg weg werg werg weg we grwe fgwdgrtwe fgwertgbsfji hhf nio npo ho o n   hp suo bh h hsf n n hn   sspd  oskvhlnashdfasdkbjfinophklaskubogh 
+
+%-----------------------
+%Graphik einfügen Anfang
+\begin{figure}[h]
+ \centering
+ \includegraphics[width=0.7\textwidth]{Bilder/csm_logo-dhbw_121398bf91}
+ \caption{Meine Grafik}
+ \label{fig:meine-grafik}
+\end{figure}
+%Graphik einfügen Ende
+%-----------------------
+
 
 
 \newpage
 
-
+%Internetquellen werden als Fußnote angegeben!
 \bibliographystyle{ieeetr}
-\renewcommand{\refname}{Internetquellen}
-\bibliography{Internetquellen}
 \renewcommand{\refname}{Literaturquellen}
 \bibliography{literatur}
-\renewcommand{\refname}{Abbildungsverzeichnis}
-\bibliography{Abbildungsverzeichnis}
+\listoffigures
 \end{document}
 
 
