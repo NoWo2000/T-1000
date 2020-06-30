@@ -1,72 +1,196 @@
-\documentclass[12px, twocolumn, a4paper]{article}
-\usepackage{fullpage}
+\documentclass[12px, a4paper]{article}
+\usepackage[
+	left=2.5cm,
+	right=2.5cm,
+	top=3cm,
+	bottom=3cm,
+]{geometry}
 \usepackage[utf8]{inputenc}
-\usepackage{ngerman}
+\usepackage[ngerman]{babel}
 \usepackage{blindtext}
+\usepackage{setspace}
+\usepackage{rotating}
+\usepackage{lmodern}
 \usepackage[bottom]{footmisc}
 \usepackage[pdfborder={0 0 0}]{hyperref}
 \usepackage{graphicx}
 
-\title{Titel der T-1000}
-\author{Vorname Nachname}
+\title{TITEL}
+\author{Name Nachname}
 \begin{document}
 
-\date{\parbox{\linewidth}{\centering
-	matrikelNr. 12346654, FIRMA\endgraf
-	SNummer@student.dhbw-mannheim.de }}
 
-\maketitle
+%Titelseite
+\begin{titlepage}
 
+	\centering
+	{\scshape\LARGE Duale Hochschule Baden - Württemberg \par}
+	\vspace{1cm}
+	{\scshape\Large Projektarbeit \par T1000 1. Studienjahr \par}
+	\vspace{1.5cm}
+	{\huge\bfseries TITEL\par}
+	\vspace{2cm}
+	{\Large\itshape NAME NACHNAME\par}
+	Studiengang\\
+	Matr. Nr., sxxxxxx@student.dhbw-mannheim.de
+	\vfill
+	Dualer Partner\par
+	FIRMA \par
+	
+
+	\vfill
+
+% Bottom of the page
+	{\large \today\par}
+\end{titlepage}
+
+%Sperrvermerk und Themenschwerpunkte in der Praxis
+\thispagestyle{empty}
+\section*{Sperrvermerk für den Praxisbericht}
+\blindtext
+\vspace{2cm}
+%Erklärung
+\section*{Erklärung}
+Ich versichere hiermit, dass ich meinen T1000 Praxisbericht selbstständig verfasst habe und keine anderen als die angegebenen Quellen und Hilfsmittel verwendet habe. \\
+\\ 
+Ich versichere zudem, dass die eingereichte elektronische Fassung mit der gedruckten Fassung übereinstimmt.\footnote{Falls beide Fassungen erforderlich sind} \\
+\vspace{2cm}
+
+\parbox{5cm}{\centering \hrule
+\strut \centering\footnotesize Ort, Datum} \hfill\parbox{5cm}{\hrule
+\strut \centering\footnotesize Name Nachname}
+\vspace{2 cm}
+\section*{Vorwort}
+\blindtext
+
+\newpage
+\thispagestyle{empty}
+\section*{Bearbeitete Tätigkeitsschwerpunkte }
+\begin{enumerate}
+	\item INHALT
+	\item INHALT
+	\item INHALT
+	\item INHALT
+\end{enumerate}
+\begin{spacing}{1.5}
+\subsection*{Kurze Beschreibung der 1. Praxisphase}
+\Blindtext
+ \newpage
 %Abstract des Papers
-\section*{abstract}
-\blindtext %LÖSCHEN BEIM BEARBEITEN
+\section*{Abstract}
+\blindtext
 
+\section*{Motivation}
+
+\Blindtext
+
+\newpage
+
+
+\newpage
+%-----------------------------------
 %Einfügen des Inhaltsverzeichnisses
 \tableofcontents
 \newpage
+%-----------------------------------
 
-%Beginn des Dokuments nach dem Inhaltsverzeichnis
-\section{Große Überschrift Nr. 1}
-\blindtext 
 
-\subsection{Unter-überschrift}
+\newpage
+%Abkürzungsverzeichnis
+\section*{Abkürzungsverzeichnis}
+\begin{tabular}[h]{l | l}
+	\hline
+	\textbf{Abkürzung} & \textbf{Bedeutung} \\
+	\hline
+		\textbf{xyx} 	& Hallo \\
+		\textbf{huhs} 	& Test \\
+		\textbf{zuy}	& Inhalt \\
+		
+		
+\end{tabular}
+\newpage
+%Aufgabenstellung mit beginnender Seitenzahl und zweispaltenformat
+
+\setlength{\columnsep}{2.5cm}
+
+\setcounter{page}{1}
+
+\section{Aufgabenstellung}
+\subsection{Problemstellung}
 \blindtext
 
-\subsubsection{Unter-unter-Überschrift}
+\subsection{Geplantes Vorgehen}
+\blindtext
+\newpage
+\section{Grundlagen}
+\newpage
+%HAUPTTEIL Beginn
+\section{Hauptteil}
+
+\subsection{Überschrift}
+\blindtext
+\subsection{Überschrift}
+\blindtext
+\subsection{Überschrift}
+\blindtext
+\subsection{Überschrift}
+\blindtext
+\subsection{Überschrift}
+\blindtext
+\subsection{Überschrift}
+\blindtext
+\subsection{Überschrift}
+\blindtext
+\subsubsection{Alternative Nr. 1}
+\blindtext
+\subsubsection{Alternative Nr. 2}
+\blindtext
+\subsubsection{Alternative Nr. 3}
+\blindtext
+\subsection{Überschrift}
 \blindtext
 
 
-\section{Überschrift Nr. 2}
-%-----------
-%LÖSCHEN BEIM BEARBEITEN
-auhdfklahdfklajhsdlkjfh alksd hfkljafsh glkadhf gklashfg klahskhask h kjhkj ghkj fghlj hgfvhbjiouz ifgjvhbu gvhbjk huizghvb jhkiuzg hjvbmn,jkl hhb nk hbno khnbmk jjkbnmk jkbn mko \cite{aristotle:physics} bhniadvbnjsdikgvfhsbmipon \footnote{TEST Fußnote} ezkhunsi fgvhwnpo fghvbaim hnwhbef oaw \footnote{Eine andere Fußnote} aw ds fg sd fg sdf gsd fg sdfg sdfg asfg as fg afg afg efg fg weg werg werg weg we grwe fgwdgrtwe fgwertgbsfji hhf nio npo ho o n   hp suo bh h hsf n n hn   sspd  oskvhlnashdfasdkbjfinophklaskubogh 
-%LÖSCHEN BEIM BEARBEITEN
-%-----------
+\newpage
+%HAUPTTEIL Ende
+\section{Kritische Reflexion und Ausblick}
+\Blindtext
+\newpage
 
 %-----------------------
 %Graphik einfügen Anfang
-\begin{figure}[h]
- \centering
- \includegraphics[width=0.7\textwidth]{Bilder/csm_logo-dhbw_121398bf91}
- \caption{Meine Grafik}
- \label{fig:meine-grafik}
-\end{figure}
+%\begin{figure}[h]
+% \centering
+% \includegraphics[width=0.7\textwidth]{Bilder/csm_logo-dhbw_121398bf91}
+% \caption{Meine Grafik}
+% \label{fig:meine-grafik}
+%\end{figure}
 %Graphik einfügen Ende
 %-----------------------
-
-
 
 \newpage
 
 %Internetquellen werden als Fußnote angegeben!
 \bibliographystyle{ieeetr}
-\renewcommand{\refname}{Literaturquellen}
+\section{Quellen}
+\renewcommand{\refname}{Literaturverzeichnis}
 \bibliography{literatur}
 \listoffigures
+\end{spacing}
+\onecolumn
+\newpage
+\section{Anänge}
+
+
+\subsection*{Anhang Nr. 1}
+%-----------------------
+%Graphik einfügen
+ %\centering
+ %\includegraphics[angle=90, width=0.65\textwidth]{Bilder/screenshot}
+\newpage
+
+\subsection*{Anhang Nr. 2}
+
+\newpage
+
 \end{document}
-
-
-
-
-
-
